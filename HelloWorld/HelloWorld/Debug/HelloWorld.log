@@ -1,0 +1,7 @@
+﻿  helloworld.c
+e:\win32\helloworld\helloworld\helloworld.c(6): warning C4007: “WinMain”: 必须是“__stdcall”
+e:\win32\helloworld\helloworld\helloworld.c(6): warning C4142: "WinMain": 类型的良性重定义
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winbase.h(913): note: 参见“WinMain”的声明
+e:\win32\helloworld\helloworld\helloworld.c(6): warning C4028: 形参 1 与声明不同
+e:\win32\helloworld\helloworld\helloworld.c(6): warning C4028: 形参 2 与声明不同
+  HelloWorld.vcxproj -> E:\Win32\HelloWorld\Debug\HelloWorld.exe
