@@ -1,0 +1,6 @@
+﻿  text.c
+e:\win32\lianxi4\text.c(23): warning C4007: “WinMain”: 必须是“__stdcall”
+e:\win32\lianxi4\text.c(23): warning C4028: 形参 1 与声明不同
+e:\win32\lianxi4\text.c(23): warning C4028: 形参 2 与声明不同
+e:\win32\lianxi4\text.c(21): warning C4716: “StrsCat”: 必须返回一个值
+  lianxi4.vcxproj -> E:\Win32\lianxi4\Debug\lianxi4.exe
