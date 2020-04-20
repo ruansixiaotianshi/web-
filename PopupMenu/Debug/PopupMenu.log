@@ -1,0 +1,3 @@
+﻿  test.cpp
+e:\win32\popupmenu\test.cpp(34): error C2440: “=”: 无法从“const wchar_t *”转换为“LPWSTR”
+  e:\win32\popupmenu\test.cpp(34): note: 转换丢失限定符
