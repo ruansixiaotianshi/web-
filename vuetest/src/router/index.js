@@ -1,30 +1,81 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import About from '../views/About.vue'
-import Book from '../views/Book.vue'
+import UsersManage from '../views/UsersManage'
+import AddUsers from '../views/AddUsers'
+import Index from '../views/Index'
+import UsersUpdate from '../views/UsersUpdate'
+import SelectData from "../views/SelectData";
+import DataCode from "../views/DataCode";
+import Login from "../views/Login";
+import Register from "../views/Register";
 Vue.use(VueRouter)
 
-  const routes = [
+const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: "/Login",
+    name: "用户登陆",
+    component: Login,
+
   },
     {
-      path: '/book',
+        path: "/Register",
+        name: "用户注册",
+        component: Register,
 
-      component: Book
-    }
-]
+    },
+
+  { path:"/",
+        name:"人员管理",
+        component:Index,
+        show:true,
+        redirect:"/Register",
+        children:[
+          {
+            path:"/UsersManage",
+            name:"用户查询",
+            component:UsersManage
+          },
+          {
+            path:"/AddUsers",
+            name:"添加用户",
+            component:AddUsers
+          }
+        ]
+      },
+      {
+        path:"/",
+        name:"数据管理",
+        component:Index,
+        show:true,
+        redirect:"/Login",
+        children:[
+          {
+            path:"/SelectData",
+            name:"数据查询",
+            component:SelectData
+          },
+          {
+            path:"/DataCode",
+            name:"数据加密",
+            component:DataCode
+          }
+        ]
+      },
+
+      {
+        path:'/update',
+        component:UsersUpdate,
+        show:false
+      }
+
+
+
+
+
+  ]
+
+
+
 
 const router = new VueRouter({
   mode: 'history',

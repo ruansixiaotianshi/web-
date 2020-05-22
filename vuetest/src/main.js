@@ -3,7 +3,8 @@ import './plugins/axios'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-
+import './plugins/element.js'
+Vue.config.devtools=true
 Vue.config.productionTip = false
 
 new Vue({
