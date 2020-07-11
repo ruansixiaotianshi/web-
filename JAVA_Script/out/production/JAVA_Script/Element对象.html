@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Element对象</title>
+</head>
+<body>
+<a>点我试一试</a>
+
+<input type="button" id="ele_btn" value="设置属性">
+
+<script>
+    var ele_btn=document.getElementById("ele_btn");
+    ele_btn.onclick=function () {
+        var element_a=document.getElementsByTagName("a")[0];
+        element_a.setAttribute("href","https://www.baidu.com");
+    }
+
+</script>
+</body>
+
+</html>
