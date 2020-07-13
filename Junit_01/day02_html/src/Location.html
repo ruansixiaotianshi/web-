@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Location</title>
+
+</head>
+<body>
+<input id="btn" type="button" value="刷新">
+<input id="gobaidu" type="button" value="去百度">
+
+<script>
+    //1.获取按钮
+var btn=document.getElementById("btn");
+//2.单机绑定事件
+btn.onclick=function () {
+    window.location.reload();
+
+}
+var href=location.href;
+    //1.获取按钮
+    var gobaidu=document.getElementById("gobaidu");
+    //2.单机绑定事件
+    gobaidu.onclick=function () {
+        window.location.href="https://www.baidu.com";
+
+    }
+
+</script>
+</body>
+</html>

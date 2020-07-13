@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Windows对象</title>
+
+
+</head>
+<body>
+<input id="openBtn" type="button" value="打开窗口">
+<input id="closeBtn" type="button" value="关闭窗口">
+
+<script>
+
+    // alert("Hello 美女！");
+    // window.alert("You are so beautiful");
+
+    // var flag= confirm("你确定要退出吗？");
+    // if(flag){
+    //     alert("欢迎下次光临！");
+    // }else{
+    //     alert("手别抖......");
+    // }
+
+    // var result=prompt("请输入用户名：");
+    // alert(result+"欢迎你！")
+    var newWindow;
+    var openBtn=document.getElementById("openBtn")
+
+    openBtn.onclick = function(){
+        newWindow=open("https://www.baidu.com");
+   }
+    var closeBtn=document.getElementById("closeBtn")
+    closeBtn.onclick = function(){
+        newWindow.close();
+    }
+
+     var id=setTimeout(fun1,2000);
+    clearTimeout(id);
+    // setInterval(fun1,2000);
+
+    function fun1() {
+        alert('Boom~~~')
+    }
+
+</script>
+</body>
+</html>

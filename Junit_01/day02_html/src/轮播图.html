@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <script>
+   //1,。修改src的属性
+     var number=1;
+     function fun() {
+         number++;
+         if(number>3){
+             number=1;
+         }
+         var image=document.getElementById("image")   ;
+         image.src="image/"+number+".jpg";
+
+     }
+     //2.定时器
+        setInterval(fun,3000);
+    </script>
+</head>
+<body>
+<img id="image" src="image/1.jpg" width="100%" height="500px">
+</body>
+</html>

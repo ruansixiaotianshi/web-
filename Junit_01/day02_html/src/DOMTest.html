@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>切换图片</title>
+</head>
+<body>
+
+<img id="page" src="image/1.jpg">
+
+<script>
+    //1.获取图片对象
+    var page=document.getElementById("page");
+    var flag=false;
+//2.单机绑定事件
+    page.onclick=function () {
+     if(flag) {//如果是第一张图
+page.src="image/2.jpg";
+flag=false;
+     } else{//如果是第二张图
+page.src="image/1.jpg";
+flag=true;
+
+     }
+
+
+    }
+</script>
+</body>
+</html>
